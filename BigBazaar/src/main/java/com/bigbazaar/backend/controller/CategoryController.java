@@ -30,7 +30,7 @@ public class CategoryController {
 		ResponseEntity<?> responseEntity;
 		try{
 			responseEntity = categorySearchService.findAllCategoriesAndSubCategories();
-			logger.debug("List of orjsdkjsdkl fjskldjlganization found for query: ", responseEntity.getBody());
+			logger.debug("List of organization found for query: ", responseEntity.getBody());
 			return responseEntity;
 		}catch(Exception ex){
 			logger.error("Exception:", ex);
